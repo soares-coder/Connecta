@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONNECTA - Cadastro Professor</title>
+    <link rel="icon" type="image/x-icon" href="/Imagens/connecta.ico">
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/Imagens/Logo connecta.png" alt="Logo CONNECTA" style="max-width: 300px; width: 100%; height: auto;">
+        </div>
+        <h3>Cadastre-se no Connecta - Professor</h3>
+        <button type="button" onclick="window.location.href='cadastro.html'" style="background: linear-gradient(135deg, #60e0a4 0%, #275743 100%); color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 14px; font-weight: 600; cursor: pointer; margin: 0 auto 20px; display: block;">Aluno</button>
+        <form method="POST" action="cadastro_professor.html">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+
+            <label for="disciplina">Disciplina</label>
+            <input type="text" name="disciplina" id="disciplina" placeholder="Qual sua disciplina?" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Seu melhor email" required>
+
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Crie uma senha forte" required>
+
+            <label for="confirm_password">Confirmar Senha</label>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirme sua senha" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <div class="divider">Ou</div>
+
+        <div class="footer-text">
+            Já tem uma conta? <a href="../login/login.html">Faça login aqui</a>
+        </div>
+    </div>
+</body>
+</html>

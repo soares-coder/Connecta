@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(130deg, #e3f2fd 0%, #c8e6c9 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.recover-wrap {
+    width: min(440px, 100%);
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.14);
+    border: 1px solid #d0d7de;
+    padding: 28px 24px;
+}
+
+.recover-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(130deg, #3b82f6 0%, #1f497a 100%);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 12px;
+    box-shadow: 0 8px 15px rgba(59, 130, 246, 0.35);
+}
+
+.recover-logo img {
+    width: 28px;
+    height: 28px;
+}
+
+.recover-title {
+    text-align: center;
+    color: #1f497a;
+    margin-bottom: 0.4rem;
+}
+
+.recover-subtitle {
+    text-align: center;
+    color: #4a4f57;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.recover-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.recover-form label {
+    color: #2f3e4d;
+    font-size: 0.92rem;
+}
+
+.recover-form input[type="email"],
+.recover-form button {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #c8cfd8;
+    padding: 12px 12px;
+    font-size: 1rem;
+}
+
+.recover-form input[type="email"] {
+    background: #fbfeff;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.recover-form input[type="email"]:focus {
+    outline: none;
+    border-color: #5680e9;
+    box-shadow: 0 0 0 3px rgba(86, 128, 233, 0.2);
+}
+
+.recover-form button {
+    border: 0;
+    background: #3b82f6;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .2s ease, transform .12s ease;
+}
+
+.recover-form button:hover {
+    background: #2a68d0;
+    transform: translateY(-1px);
+}
+
+.recover-msg {
+    min-height: 24px;
+    color: #276749;
+    font-size: 0.95rem;
+}
+
+.recover-footer {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #2f3e4d;
+}
+
+.recover-footer a {
+    color: #2a74f4;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.recover-footer a:hover {
+    color: #1f5ad1;
+    border-bottom: 1px solid #2a74f4;
+}
+
+@media (max-width: 460px) {
+    .recover-wrap {
+        padding: 20px;
+    }
+}

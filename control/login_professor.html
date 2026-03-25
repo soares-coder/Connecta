@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONNECTA</title>
+    <link rel="stylesheet" href="/css/style_professor.css">
+    <link rel="icon" href="/Imagens/connecta.ico" type="image/x-icon"> 
+    
+</head>
+<body>
+    <div class="login-container">
+   <!-- section para titulos e subtitulos -->
+    <section>
+        <h1>CONNECTA</h1>
+        <h3 class="subtitle">Bem-vindo ao Connecta</h3>
+    </section>
+    <!-- section para o formulário de login -->
+    <section>
+        <form action="login.html" method="POST">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email_log" placeholder="Digite seu e-mail" required>
+
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password_log" placeholder="Digite sua senha" required>
+
+            <div class="forgot-password"><a href="#">Esqueceu sua senha?</a></div>
+
+            <button type="submit">ENTRAR</button>
+        </form>
+    </section>
+
+        <div class="divider"><span></span></div>
+
+        <div class="signup">
+            <p>Não tem uma conta? <a href="../cadastro/cadastro.html">Cadastre-se</a></p>
+        </div>
+    </div>
+</body>
+</html>
