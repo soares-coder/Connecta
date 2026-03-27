@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONNECTA</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/Imagens/connecta.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../Imagens/connecta.ico" type="image/x-icon">
 </head>
 <body>
     <div class="login-container">
    <!-- section para titulos e subtitulos -->
     <section>
-        <h1>CONNECTA</h1>
-        <h3 class="subtitle">Bem-vindo ao Connecta</h3>
+        <div class="logo">
+            <img src="../Imagens/Logo connecta.png" alt="Logo CONNECTA" style="max-width: 300px; width: 100%; height: auto;">
+
+
+        <h3 class="subtitle">Bem-vindo ao Connecta - Aluno</h3>
     </section>
     <!-- section para o formulário de login -->
     <section>
@@ -23,7 +26,7 @@
             <label for="password">Senha</label>
             <input type="password" name="password" id="password_log" placeholder="Digite sua senha" required>
 
-            <div class="forgot-password"><a href="#">Esqueceu sua senha?</a></div>
+            <div class="forgot-password"><a href="../control/recuperação_aluno.html">Esqueceu sua senha?</a></div>
 
             <button type="submit">ENTRAR</button>
         </form>
@@ -32,7 +35,7 @@
         <div class="divider"><span></span></div>
 
         <div class="signup">
-            <p>Não tem uma conta? <a href="../cadastro/cadastro.html">Cadastre-se</a></p>
+            <p>Não tem uma conta? <a href="../control/cadastro.html">Cadastre-se</a></p>
         </div>
     </div>
 </body>
