@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha - CONNECTA</title>
+    <link rel="stylesheet" href="../css/style_recuperacao_prof.css">
+    <link rel="icon" href="../Imagens/connecta.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+   <!-- section para titulos e subtitulos -->
+    <section>
+         <div class="logo">
+            <img src="../Imagens/Logo connecta.png" alt="Logo CONNECTA" style="max-width: 300px; width: 100%; height: auto;">
+
+        <h3 class="subtitle">Recuperação de Senha - Professor</h3>
+    </section>
+    <!-- section para o formulário de recuperação -->
+    <section>
+        <form id="recover-form" novalidate>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+            <button type="submit">Enviar link de recuperação</button>
+            <div id="message" style="margin-top: 10px; color: #276749; font-size: 0.95rem;"></div>
+        </form>
+    </section>
+
+        <div class="signup">
+            <a href="../control/login_professor.html">← Voltar para login</a>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('recover-form');
+        const message = document.getElementById('message');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = form.email.value.trim();
+            if (!email) {
+                message.textContent = 'Por favor informe um e-mail válido.';
+                message.style.color = '#e11d48';
+                return;
+            }
+
+            message.style.color = '#276749';
+            message.textContent = 'Pronto! Enviamos as instruções para ' + email + '. Verifique sua caixa de entrada.';
+            form.reset();
+
+            setTimeout(() => {
+                message.textContent = '';
+            }, 9000);
+        });
+    </script>
+</body>
+</html>                        
